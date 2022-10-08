@@ -22,6 +22,17 @@ VPC는 VPC Domain을 통해서 장비 간 연결을 하며, 단일 VDC(Virtual D
 
 고가용성 제공
 
+### VPC 구성요소
+
+subnet : VPC를 특정 범위로 나눈 범위
+
+RouteTable : 네트워크 트래픽을 전달할 위치가 명시된 규칙 집합 테이블
+
+Internet GW : VPC의 리소스에서의 인터넷 통신을 활성하기 위한 게이트웨이
+
+NAT GW : 네트워크 주소 변환을 통해 private subnet 에서 인터넷 통신을 연결하는 게이트웨이
+
+VPC endpoint : NAT, IGW 등을 통하지 않고 AWS의 서비스를 비공개로 연결 가능하게 하는 서비스
 
 
 # VPN

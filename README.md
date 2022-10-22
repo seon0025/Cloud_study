@@ -91,3 +91,19 @@ Network Load Balancer
 Gateway Load Balancer
 
 Classic Load Balancer
+
+
+
+# private subnet
+
+### 외부에서 직접적으로 접근이 불가능한 네트워크 영역이다.
+
+Internet Gateway에 연결되어 있지 않은 Subnet이다.
+
+Private Subnet 은 외부 인터넷과 연결이 안되기 때문에 Private Subnet 인스턴스에 접속하고 제어하고 Private Subnet 의 인스턴스들이 인터넷연결을 위한 NAT 인스턴스가 필요하다.
+
+### 프라이빗 서브넷을 사용하는 이유
+
+중요한 리소스들을 안전하게 관리하기 위함이다.
+
+DB를 프라이빗 서브넷에 위치시킨다던가, ELB만 퍼블릭영역에 두고 실제 WAS는 프라이빗영역에 배치하여 보다 안전하게 관리할 수 있다.
